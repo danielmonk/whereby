@@ -31,6 +31,8 @@ const data = {
     var makeIframe = document.createElement("iframe");
     makeIframe.setAttribute("src", roomUrl);
     makeIframe.setAttribute("allow", "camera;microphone");
+    makeIframe.style.width = "1440px";
+    makeIframe.style.height = "775px";
     app.appendChild(makeIframe);
   }
 })();
