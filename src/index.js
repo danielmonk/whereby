@@ -24,4 +24,7 @@ const data = {
     body: JSON.stringify(data)
   }).then((res) => res.json());
   console.log(response);
+
+  let roomUrl = response.roomUrl;
+  console.log(roomUrl);
 })();
