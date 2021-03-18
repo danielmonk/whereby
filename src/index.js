@@ -30,13 +30,7 @@ const data = {
     let app = document.getElementById('app');
     var makeIframe = document.createElement("iframe");
     makeIframe.setAttribute("src", roomUrl);
-    makeIframe.setAttribute("scrolling", "no");
-    makeIframe.style.border = "none";
-    makeIframe.style.left =  "-453px";
-    makeIframe.style.top = "-70px";
-    makeIframe.style.position = "absolute";
-    makeIframe.style.width = "1440px";
-    makeIframe.style.height = "775px";
+    makeIframe.setAttribute("allow", "camera;microphone");
     app.appendChild(makeIframe);
   }
 })();
