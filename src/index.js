@@ -15,7 +15,7 @@ const data = {
 };
 
 (async () => {
-  const response = await fetch("https://api.whereby.dev/v1/meetings", {
+  const response = await fetch("https://cors-anywhere.herokuapp.com/https://api.whereby.dev/v1/meetings", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${API_KEY}`,
