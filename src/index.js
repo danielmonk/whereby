@@ -28,7 +28,7 @@ const data = {
   let roomUrl = response.roomUrl;
   if(roomUrl){
     let app = document.getElementById('app');
-    var makeIframe = app.createElement("iframe");
+    var makeIframe = document.createElement("iframe");
     makeIframe.setAttribute("src", roomUrl);
     makeIframe.setAttribute("scrolling", "no");
     makeIframe.style.border = "none";
@@ -37,5 +37,6 @@ const data = {
     makeIframe.style.position = "absolute";
     makeIframe.style.width = "1440px";
     makeIframe.style.height = "775px";
+    app.appendChild(makeIframe);
   }
 })();
