@@ -26,5 +26,16 @@ const data = {
   console.log(response);
 
   let roomUrl = response.roomUrl;
-  console.log(roomUrl);
+  if(roomUrl){
+    let app = document.getElementById('app');
+    var makeIframe = app.createElement("iframe");
+    makeIframe.setAttribute("src", roomUrl);
+    makeIframe.setAttribute("scrolling", "no");
+    makeIframe.style.border = "none";
+    makeIframe.style.left =  "-453px";
+    makeIframe.style.top = "-70px";
+    makeIframe.style.position = "absolute";
+    makeIframe.style.width = "1440px";
+    makeIframe.style.height = "775px";
+  }
 })();
